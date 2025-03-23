@@ -1,0 +1,80 @@
+#purchase {
+    height: 97vh;
+}
+
+#purchase .container {
+    padding-top: 40px;
+}
+
+#purchase-container {
+    display: flex;
+    justify-content: center;
+    gap: 17px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.purchase-card {
+    width: 250px;
+    height: 415px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 16px grey ;
+}
+
+.purchase-card img {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.price-box h5 {
+    letter-spacing: 0.02rem;
+}
+
+.price-box p {
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-top: -6px;
+}
+
+.price-box .cart1 {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin-left: 20px;
+    gap: 40px;
+    align-items: center;
+    margin-left: px;
+}
+
+/* 576px için responsive tasarım */
+@media (max-width: 576px) {
+    #purchase {
+        height: 2000px;
+    }
+    
+    #purchase .container {
+        display: flex;
+        flex-direction: column;
+        margin-left: -40px;
+        }
+    
+    #purchase .section-title {
+        font-size: 1.5rem;
+    }
+    
+    #purchase .underline {
+        margin-top: 5px;
+        width: 80px;
+        height: 6px;
+    }
+    
+    #purchase .description {
+        width: 280px;
+        margin-top: 10px;
+        font-weight: 600;
+    }
+    
+    #purchase #purchase-container {
+        margin-top: -5px;
+    }
+}

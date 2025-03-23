@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Sport Center</title>
+</head>
+<body>
+<!--wrapper for bg img-->
+<div id="hero-wrapper">
+<!--HEADER START-->
+<header id="header">
+  <div class="container">
+      <div class="logo">
+          <img src="img/logo.png" alt="logo">
+      </div>
+
+      <!-- Hamburger Menü -->
+      <div class="menu-toggle" id="mobile-menu">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+      </div>
+
+      <nav id="navbar" class="navbar">
+          <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a class="nav-link" href="#hero-wrapper">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#classes">Classes</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#trainer">Trainer</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#review">Review</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              <li>
+                  <button type="button" class="btn">JOIN US</button>
+              </li>
+          </ul>
+      </nav>
+  </div>
+</header>
+<!--HEADER END-->
+
+<!--HERO START-->
+    <section id="hero">
+            <h3 class="b1">POWERFULL</h3>
+              <h1 class="b2">Group<br>Practice<br>With Trainer</h1>
+                <div id="l1">
+                   <p class="p1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem odio nemo perferendis architecto nisi nulla molestias, magni enim, laudantium accusamus dolorum aut necessitatibus ratione quia corporis eaque, ex perspiciatis Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo debitis culpa labore consequuntur iure rem voluptat</p>
+                  <button type="button" id="btn1">Sign Up</button>
+                  <button type="button" id="btn2">Details</button>
+                </div>
+    </section>
+<!--HERO END-->
+</div>
+<!--wrapper end-->
+
+<!--1st section start-->
+<section id="section1">
+    <div class="container text-center">
+        <div class="row">
+          <div class="col col-md-2">
+            <p class="x1">325</p>
+            <p class="x2">Course</p>
+          </div>
+          <div class="col col-md-2">
+            <p class="x1">405</p>
+            <p class="x2">Work Out</p>
+          </div>
+          <div class="col col-md-2">
+            <p class="x1">305</p>
+            <p class="x2">Working Hour</p>
+          </div>
+          <div class="col col-md-2">
+            <p class="x1">705</p>
+            <p class="x2">Happy Client</p>
+          </div>
+        </div>
+      </div>
+</section>
+<!--1st section end-->
+
+<!--2nd section start-->
+<section id="classes" class="custom-section text-center">
+    <div class="container">
+        <h2 class="section-title">OUR CLASSES</h2>
+          <div class="underline"></div>
+        <p class="description">
+            Lorem Ipsun is not simply random text. It has roots in a piece of classical at Hampden-Sydney College.
+        </p>
+
+        <div id="button-container" class="mt-5">
+            <button class="custom-btn" data-class="yoga">Yoga</button>
+            <button class="custom-btn" data-class="group">Group</button>
+            <button class="custom-btn" data-class="solo">Solo</button>
+            <button class="custom-btn" data-class="stretching">Stretching</button>
+        </div>
+
+        <section class="container-2">
+          <div class="text-content">
+            <h2 id="class-title">Why are your Yoga?</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime optio fugiat ab perferendis quam aliquam, blanditiis asperiores excepturi quas. Velit beatae modi vel totam, deleniti ipsa enim quibusdam placeat. Amet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae aliquam optio, dolorum animi atque magnam totam dolor.
+            </p>
+
+            <h2 id="class-title">When comes Yoga Your Time.</h2>
+            <ul>
+              <li>Saturday-Sunday:8:00am - 10:00am</li>
+              <li>Monday-Tuesday:10:00am - 12:00pm</li>
+              <li>Wednesday-Friday:3:00pm - 6:00pm</li>
+          </ul>
+        </div>
+            <div class="img-container">
+              <img src="/img/yoga.jpg" alt="yoga pose">
+            </div>
+        </section>
+    </div>
+</section>
+<!--2nd section end-->
+
+<!--3rd section start-->
+<section id="bmi">
+  <div class="container">
+    <div class="section3">
+      <h2>BMI Calculator</h2>
+        <p>
+          Contrary to popular belief, Lorem ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+        </p>
+        <p>
+          Contrary to popular belief, Lorem ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+        </p>
+        <!--bmi calculator start-->
+        <div class="input-container">
+          <div class="input-box">
+            <input type="number" step="0.01" id="height" placeholder="Your Height" oninput="calculateBMI()">
+            <span class="label">cm</span>
+          
+
+          <div class="input-box">
+            <input type="number" id="weight" placeholder="Your Weight" oninput="calculateBMI()">
+            <span class="label">kg</span>
+          </div>
+        </div>
+      </div>
+    </div>
+        <!--bmi calculator end-->
+        <div class="image-container">
+          <h3 class="image-title">Your BMI</h3>
+          <img id="bmi-image" class="bmi-image" src="/img/bmi-index.jpg" alt="BMI index">
+          <div id="triangle" class="triangle"></div>
+      </div>
+
+  </div>
+</section>
+<!--3rd section end-->
+
+<!--4th section start-->
+<section id="trainer" class="text-center">
+    <div class="container">
+        <h2 class="section-title">OUR BEST TRAINERS</h2>
+        <div class="underline"></div>
+        <p class="description">
+            Lorem Ipsun is not simply random text. It has roots in a piece of classical at Hampden-Sydney College.
+        </p>
+      
+        <div id="trainer-container">
+          <div class="trainer-card">
+              <div class="trainer-border">
+                  <div class="trainer-box">
+                      <img src="img/trainer1.jpg" alt="Trainer 1">
+                      <div class="trainer-info">
+                          <h3>Amy Smith</h3>
+                          <p>Pilates Trainer</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="side"></div>
+          </div>
+      
+          <div class="trainer-card">
+              <div class="trainer-border">
+                  <div class="trainer-box">
+                      <img src="img/trainer2.jpg" alt="Trainer 2">
+                      <div class="trainer-info">
+                          <h3>John Cena</h3>
+                          <p>Strength Trainer</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="side"></div>
+          </div>
+      
+          <div class="trainer-card">
+              <div class="trainer-border">
+                  <div class="trainer-box">
+                      <img src="img/trainer3.jpg" alt="Trainer 3">
+                      <div class="trainer-info">
+                          <h3>Jane Doe</h3>
+                          <p>Cardio Trainer</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="side"></div>
+          </div>
+      </div>
+    </div>
+  </section>      
+<!--4th section end-->
+
+<!--5th section start-->
+<section id="purchase" class="text-center">
+  <div class="container">
+    <h2 class="section-title">PURCHASE FROM US</h2>
+    <div class="underline"></div>
+    <p class="description">
+        Lorem Ipsun is not simply random text. It has roots in a piece of classical at Hampden-Sydney College.
+    </p>
+  
+    <div id="purchase-container">
+      <div class="purchase-card">
+              <div class="image-box">
+                  <img src="img/purchase1.jpg" alt="kettlebell/5kg">
+              </div>
+              <div class="price-box">
+                <h5>Kettlebell / 5kg</h5>
+                <p><span class="text-decoration-line-through">89,99$</span> / 59,99$</p>
+                <p class="cart1"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</p>
+              </div>
+      </div>
+  
+      <div class="purchase-card">
+              <div class="image-box">
+                  <img src="img/purchase2.jpg" alt="treadmill">
+              </div>
+              <div class="price-box">
+                <h5>Treadmill</h5>
+                <p><span class="text-decoration-line-through">899,99$</span> / 599,99$</p>
+                <p class="cart1"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</p>
+              </div>
+      </div>
+      
+
+      <div class="purchase-card">
+              <div class="image-box">
+                  <img src="img/purchase3.jpg" alt="adjustable dumbbell">
+              </div>
+              <div class="price-box">
+                <h5>Adjustable Dumbbell</h5>
+                <p><span class="text-decoration-line-through">89,99$</span> / 59,99$</p>
+                <p class="cart1"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</p>
+              </div>
+      </div>
+
+      <div class="purchase-card">
+        <div class="image-box">
+            <img src="img/purchase4.jpg" alt="kettlebell/3kg">
+        </div>
+        <div class="price-box">
+          <h5>Kettlebell / 3kg</h5>
+          <p><span class="text-decoration-line-through">89,99$</span> / 59,99$</p>
+          <p class="cart1"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</p>
+        </div>
+      </div>
+  </div>
+</div>
+</section>
+<!--5th section end-->
+
+<!--6th section start-->
+<section id="review" class="text-center">
+  <div class="container">
+    <h2 class="section-title">REVIEW CLIENT</h2>
+    <div class="underline"></div>
+    <p class="description">
+        Lorem Ipsun is not simply random text. It has roots in a piece of classical at Hampden-Sydney College.
+    </p>
+  
+    <div class="review-container">
+      <!-- Diet Expert -->
+      <div class="review-box">
+        <div class="review-header">
+          <img src="img/client1.jpg" alt="Diet Expert" class="review-img">
+          <div class="review-info">
+            <h4>Diet Expert</h4>
+            <p class="role">CFO</p>
+          </div>
+        </div>
+        <div class="bubble">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla, sequi quia, libero voluptatibus ducimus earum quidem minus Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam eveniet officia consectetur impedit reiciendis accusamus ex explicabo facere facilis,</p>
+        </div>
+      </div>
+
+      <!-- Cardio Trainer -->
+      <div class="review-box">
+        <div class="review-header">
+          <img src="img/client2.jpg" alt="Cardio Trainer" class="review-img">
+          <div class="review-info">
+            <h4>Cardio Trainer</h4>
+            <p class="role">CEO</p>
+          </div>
+        </div>
+        <div class="bubble">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla, sequi quia, libero voluptatibus ducimus earum quidem minus Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam eveniet officia consectetur impedit reiciendis accusamus ex explicabo facere facilis,</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--6th section end-->
+
+<!--7th section start-->
+<section id="contact" class="text-center">
+  <div class="container">
+    <h2 class="section-title">CONTACT US</h2>
+    <div class="underline"></div>
+    <p class="description">
+        Lorem Ipsun is not simply random text. It has roots in a piece of classical at Hampden-Sydney College.
+    </p>
+
+  
+    
+    <div class="contact-container">
+      <div class="info-box">
+        <div class="contact-box">
+          <div class="mobile-info">
+            <h4>Mobile Number</h4>
+              <p class="role1">+135 773 321 4442</p>
+            </div>
+            <div class="email-info">
+              <h4>Email Address</h4>
+              <p class="role1">demo@demo.com</p>
+            </div>
+          </div>
+      </div>
+<!--form start-->
+<div class="form-map-container">
+    <div class="form-box">
+      <h5>Make An Appoinment</h5>
+
+      <form action="#" method="POST">
+        <input type="text" id="name" name="name" placeholder="Your Name"><br>
+
+        <input type="email" id="email" name="email" placeholder="Your Email" required><br>
+
+        <textarea id="message" name="message" rows="4" cols="50" placeholder="Your Message" required></textarea>
+      </form>
+    </div>
+    <!--form end-->
+  
+
+     
+      <div class="map-box">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12028.667371997095!2d29.061359254870347!3d41.0872011143937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caca22fbc9bc6d%3A0x79952cd98b064cfa!2sAnadolu%20Hisar%C4%B1%2C%2034810%20Beykoz%2F%C4%B0stanbul!5e0!3m2!1str!2str!4v1742686019413!5m2!1str!2str" width="500" height="330" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+<!--7th section end-->
+
+<!--footer start-->
+<footer>
+  <div class="footer-container">
+
+    <div class="footer-top">
+      <img src="img/logo.png" alt="logo" class="footer-logo">
+      <p class="footer-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia aliquam ipsum placeat sapiente corporis consectetur aspernatur adipisci consequuntur unde, id velit lestiae quo cum non inventore labore quasi soluta quidmoem? lestiae quo cum non inventore labore quasi</p>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-section">
+        <h3>Information</h3>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Classes</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Helpful Links</h3>
+        <ul>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Terms & Condition</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--footer end-->
+    
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

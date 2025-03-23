@@ -1,0 +1,164 @@
+#contact {
+    height: 90vh;
+}
+
+#contact .container {
+    padding-top: 40px;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 30px;
+    padding-left: 200px;
+}
+
+.contact-box {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.contact-box h4 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 0.02rem;
+}
+
+.contact-box p {
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-left: -25px;
+    margin-top: -4px;
+}
+
+.form-map-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    max-width: 500px;
+    gap: 65px;
+    margin-top: -15px;
+}
+
+.form-box {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+
+.form-box h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.02rem;
+}
+
+.form-box input,
+.form-box textarea {
+    background-color: var(--background-color-3);
+    border: none;
+    padding: 6px;
+    border-radius: 5px;
+    display: flex;
+    width: 400px;
+}
+
+.map-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: -65px;
+}
+
+.mobile-info, .email-info {
+    display: flex;
+    flex-direction: column;
+}
+
+/* 576px için responsive tasarım */
+@media (max-width: 576px) {
+    #contact {
+        height: 860px;
+    }
+    
+    #contact .container {
+        display: flex;
+        flex-direction: column;
+        margin-left: -40px;
+        }
+    
+    #contact .section-title {
+        font-size: 1.5rem;
+    }
+    
+    #contact .underline {
+        margin-top: 5px;
+        width: 80px;
+        height: 6px;
+    }
+    
+    #contact .description {
+        width: 280px;
+        margin-top: 10px;
+        font-weight: 600;
+    }
+    
+    #contact .contact-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: -30px;
+        margin-left: -100px;
+    }
+
+    .contact-container h4 {
+        font-size: 0.9rem;
+        
+    }
+
+    .contact-container p {
+        font-size: 0.6rem;
+        margin-left: -16px;
+    }
+
+    .contact-box {
+        gap: 50px;
+        margin-left: 30px;
+    }
+
+    #contact .form-map-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-box {
+        margin-left: 30px;
+    }
+
+    .form-box h5 {
+        font-size: 1.2rem;
+    }
+
+    .form-box input {
+       width: 260px;
+       height: 30px;
+    }
+
+    .form-box textarea {
+        width: 260px;
+        height: 70px;
+    }
+
+    .map-box {
+        margin-top: -50px;
+        margin-left: 20px;
+    }
+
+    .map-box iframe {
+        width: 280px;
+        height: 300px;
+    }
+    }

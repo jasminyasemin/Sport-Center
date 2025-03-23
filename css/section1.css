@@ -1,0 +1,43 @@
+#section1 {
+    background-color: rgb(237, 246, 255);
+    padding: 20px;
+}
+
+.row {
+    margin-left: 100px;
+    display: flex;
+    gap: 20px;
+}
+  
+
+.col {
+    background-color: white;
+    width: 250px;
+    padding: 7px;
+    margin: 6px;
+}
+
+.x1 {
+    font-weight: bold;
+    color: var(--font-color-1);
+    font-size: 25px;
+}
+
+.x2 {
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+}
+
+/* 576px için responsive tasarım */
+@media (max-width: 576px) {
+    #section1 .row {
+        flex-direction: column;
+        display: block;
+        margin-left: 80px;
+    }
+
+    #section1 .row .col {
+        margin-top: 20px;
+    }
+}

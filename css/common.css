@@ -1,0 +1,15 @@
+:root {
+    --font-color-1: rgb(40, 65, 128);
+    --font-color-2: #ffff;
+    --background-color-1: rgb(40, 65, 128);
+    --background-color-2: rgb(238, 138, 18);
+    --background-color-3: rgb(237, 246, 255);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: rgb(61, 61, 61);
+}

@@ -1,0 +1,121 @@
+#review {
+    background-color: var(--background-color-3);
+    height: 80vh;
+}
+
+#review .container {
+    padding-top: 40px;
+}
+
+.review-container {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+  }
+  
+  .review-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 500px;
+  }
+  
+  .review-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .review-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .review-info {
+    text-align: left;
+  }
+  
+  .role {
+    font-size: 14px;
+    color: gray;
+    margin-top: -5px;
+  }
+  
+  .bubble {
+    background-color: var(--background-color-1);
+    color: white;
+    padding: 10px;
+    position: relative;
+    max-width: 100%;
+    text-align: left;
+  }
+
+ /* sağ üçgen */
+.bubble::before {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-left: 0px solid transparent;
+    border-right: 40px solid transparent;
+    border-top: 40px solid rgb(109, 130, 177);
+  }
+  
+  /* sol üçgen */
+  .bubble::after {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 0px solid transparent;
+    border-top: 40px solid rgb(109, 130, 177);
+  }
+
+  /* 576px için responsive tasarım */
+@media (max-width: 576px) {
+  #review {
+      height: 940px;
+  }
+  
+  #review .container {
+      display: flex;
+      flex-direction: column;
+      margin-left: -40px;
+      }
+  
+  #review .section-title {
+      font-size: 1.5rem;
+  }
+  
+  #review .underline {
+      margin-top: 5px;
+      width: 80px;
+      height: 6px;
+  }
+  
+  #review .description {
+      width: 280px;
+      margin-top: 10px;
+      font-weight: 600;
+  }
+  
+  #review .review-container {
+      display: flex;
+      flex-direction: column;
+      margin-top: -5px;
+  }
+
+  #review .review-box {
+    width: 380px;
+    height: 250px;
+    margin-left: 70px;
+  }
+  }

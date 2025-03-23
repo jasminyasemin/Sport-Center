@@ -1,0 +1,160 @@
+#trainer {
+    background-color: var(--background-color-3);
+    height: 80vh;
+}
+
+#trainer .container {
+    padding-top: 40px;
+}
+
+/* Eğitmenler için Genel Konteyner */
+#trainer-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+/* Eğitmen Kartı */
+.trainer-card {
+    position: relative;
+    width: 250px;
+}
+
+/* Mavi Çıkıntılar */
+.trainer-card::before,
+.trainer-card::after, 
+.trainer-card .side::before,
+.trainer-card .side::after {
+    content: "";
+    position: absolute;
+    background-color: var(--background-color-1);
+    transition: all 0.3s ease-in-out;
+}
+
+.trainer-card::before,
+.trainer-card::after {
+    width: 70px;
+    height: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.trainer-card::before {
+    top: -6px;
+}
+
+.trainer-card::after {
+    bottom: -6px;
+}
+
+/* Sağ ve Soldaki Çıkıntılar */
+.trainer-card .side::before,
+.trainer-card .side::after {
+    width: 6px;
+    height: 90px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.trainer-card .side::before {
+    left: -6px;
+}
+
+.trainer-card .side::after {
+    right: -6px;
+}
+
+
+/* Turuncu Kenarlık */
+.trainer-border {
+    border: 2px solid var(--background-color-2);
+    border-radius: 12px;
+    position: relative;
+}
+
+/* Eğitmen Kutusu */
+.trainer-box {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Eğitmen Resmi */
+.trainer-box img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+/* Hover Kutucuğu */
+.trainer-info {
+    position: absolute;
+    bottom: 20px; 
+    left: 50%;
+    width: 200px;
+    background-color: rgba(53, 85, 146);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 14px;
+    opacity: 0; 
+    transform: translate(-50%, 0) scale(0.5);
+    transition: all 0.3s ease-in-out;
+    z-index: 1; 
+    padding: 10px;
+}
+
+/* Hover Olunca Görünürlük ve Boyut Ayarı */
+.trainer-card:hover .trainer-info {
+    opacity: 1;
+    transform: translate(-50%, 0) scale(1);
+}
+
+/* Hover Olunca Mavi Çıkıntılar Uzayacak */
+.trainer-card:hover::after {
+    width: 190px;
+}
+
+.trainer-card:hover .side::before,
+.trainer-card:hover .side::after {
+    height: 160px;
+}
+
+/* 576px için responsive tasarım */
+@media (max-width: 576px) {
+#trainer {
+    height: 1270px;
+}
+
+#trainer .container {
+    display: flex;
+    flex-direction: column;
+    margin-left: -40px;
+    }
+
+#trainer .section-title {
+    font-size: 1.5rem;
+}
+
+#trainer .underline {
+    margin-top: 5px;
+    width: 80px;
+    height: 6px;
+}
+
+#trainer .description {
+    width: 280px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+#trainer #trainer-container {
+    margin-top: -5px;
+}
+}
