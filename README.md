@@ -1,6 +1,6 @@
 # Sport Center Projesi
 
-🔗 **Canlı Demo:** [Buraya Tıkla](https://proje-adin.netlify.app/)
+🔗 **Canlı Demo:** [Sport Center Projesi](https://sport-center07.netlify.app)
 
 ## 📌 Özellikler
 - HTML, CSS ve JavaScript ile geliştirilmiştir.
